@@ -1,4 +1,4 @@
-import React,{useContext,useState,useEffect} from 'react'
+import React,{useContext,useState} from 'react'
 import './Search.css'
 import RecipeContext from '../../context/RecipeContext'
 // import { useLocation } from 'react-router-dom'

@@ -8,6 +8,11 @@
     /* background-color: rgb(224, 220, 220); */
     min-height: 250px;
     color: black;
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+.effect-back{
+    animation: slide-in-back 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
 }
 .main-container > *{
@@ -53,6 +58,8 @@
     margin: 0 auto;
     width: 76%;
     margin-top: 3rem;
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
 }
 .button-box button{
     background-color:#cf2e2e;
@@ -75,6 +82,10 @@
     color:#cf2e2e;
     opacity: 0.7;
 } */
+.effect-back{
+    animation: slide-in-back 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
 @media screen and (max-width:1000px) {
     .main-container .ingredient-box h1{
         margin-bottom: 20px;

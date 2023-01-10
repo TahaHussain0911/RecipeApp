@@ -6,14 +6,14 @@ import RecipeContext from "../../context/RecipeContext";
 import Navbar from "../Navbar/Navbar";
 const Pages = () => {
   const getContext = useContext(RecipeContext);
-  const { recipe, error } = getContext;
+  const { recipe} = getContext;
   const [select, setselect] = useState({});
   const handleClick = (e) => {
     // console.log(e.target.src)
     // console.log(recipe)
     setselect(
       recipe.filter((value) => {
-        return value.recipe.image == e.target.src;
+        return value.recipe.image === e.target.src;
       })[0]
     );
   };

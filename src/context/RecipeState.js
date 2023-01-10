@@ -3,7 +3,7 @@ import RecipeContext from './RecipeContext'
 const RecipeState = (props) => {
     const [search, setsearch] = useState('chocolate')
     const appId='0b8687e0';
-    const apiKey='c5e1a7dce44e250c764dccc1b6543a29';
+    const apiKey=process.env.REACT_APP_RECIPE_API;
     const [error, seterror] = useState(false)
     const [recipe, setrecipe] = useState([])
     const [loadingBar, setloadingBar] = useState(false)
@@ -28,6 +28,7 @@ const RecipeState = (props) => {
     } 
     useEffect(() => {
       updateRecipe();
+      // eslint-disable-next-line
     }, [search])
     return (
     <RecipeContext.Provider value={{updateRecipe,recipe,setsearch,search,error,seterror,loadingBar,setloadingBar}}>
