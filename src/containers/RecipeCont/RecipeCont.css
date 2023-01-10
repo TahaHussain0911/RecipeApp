@@ -1,0 +1,80 @@
+.recipe-container
+.box{
+    min-height: 250px;
+    /* margin: 50px; */
+    position: relative;
+    /* cursor: pointer; */
+    overflow: hidden;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 10px;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+
+}
+.box h2{
+    font-size: 20px;
+    height: 20%;
+}
+
+.box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+.box .main-content{
+    height: 49px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgb(27, 27, 27,-5);
+    color: white;
+    box-sizing: border-box;
+    transition: 0.5s;
+    padding: 6px;
+}
+.box .main-content h2{
+    font-size: 25px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.box .main-content p,.box .main-content button{
+    opacity: 0;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.box .main-content p span{
+    font-weight: lighter;
+}
+.box .main-content button{
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.box:hover .main-content{
+    height: 180px;
+    bottom: 0px;
+    background-color: black;
+    opacity: 0.8;
+}
+.box:hover .main-content p{
+    opacity: 1;
+    visibility: visible;
+}
+.box:hover .main-content button{
+    opacity: 1;
+    visibility: visible;
+}

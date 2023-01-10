@@ -1,0 +1,142 @@
+.main-container{
+    margin: 20px auto;
+    width: 76%;
+    display: flex;
+    
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* background-color: rgb(224, 220, 220); */
+    min-height: 250px;
+    color: black;
+
+}
+.main-container > *{
+    flex: 1 1 15em;
+}
+.main-container img{
+    width: 100%;
+}
+
+.main-container .ingredient-box{
+    width: 100%;
+    padding: 10px 20px;
+}
+.main-container .ingredient-box h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.main-container .ingredient-box a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #cf2e2e;
+    color: white;
+    /* margin-left: 4px; */
+    border: none;
+    margin-top: 15px;
+}
+.main-container .ingredient-box h2{
+    font-family: CopperPot,Helvetica,sans-serif;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.main-container .ingredient-box p{
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-family: CopperPot,Helvetica,sans-serif;
+}
+.stars i{
+    font-size: 30px;
+    color: black;
+}
+.button-box{
+    margin: 0 auto;
+    width: 76%;
+    margin-top: 3rem;
+}
+.button-box button{
+    background-color:#cf2e2e;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 15px 50px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    box-shadow: 4px 4px 10px silver;
+    transition: 0.5s;
+}
+.button-box button i{
+    font-size: 25px;
+}
+/* .button-box button:hover{
+    background-color: white;
+    color:#cf2e2e;
+    opacity: 0.7;
+} */
+@media screen and (max-width:1000px) {
+    .main-container .ingredient-box h1{
+        margin-bottom: 20px;
+        font-size: 32px;
+    }
+    .main-container .ingredient-box h2{
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+.main-container .ingredient-box p{
+    font-size: 15px;
+}
+.main-container .ingredient-box{
+    padding: 10px 5px;
+}
+.button-box button{
+    padding: 15px 30px;
+    font-size: 19px;
+}
+}
+@media screen and (max-width:500px) {
+    .main-container{
+        width: 84%;
+    }
+    .button-box{
+        width: 84%;
+    }
+    .main-container .ingredient-box a{
+        margin-top: 10px;
+    }
+    .button-box{
+        margin-top: 2rem;
+    }
+    .button-box button{
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+    .button-box button i{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width:350px) {
+    .main-container .ingredient-box a{
+        margin-top: 20px;
+    }
+    .main-container .ingredient-box{
+        padding: 0px 5px;
+    }
+    .main-container .ingredient-box h1{
+        margin-bottom: 14px;
+        font-size: 27px;
+    }
+    .main-container .ingredient-box h2{
+        margin-bottom: 14px;
+        font-size: 23px;
+    }
+    .button-box button{
+        gap: 7px;
+        padding: 10px 13px;
+        font-size: 16px;
+    }
+    .button-box button i{
+        font-size: 17px;
+    }
+}
