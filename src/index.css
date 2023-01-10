@@ -1,56 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Varela+Round&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-font-family: 'Kanit', sans-serif;
-font-family: 'Varela Round', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+  font-family: "Varela Round", sans-serif;
 }
 @keyframes scale-in-center {
-    0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      opacity: 1;
-    }
+  0% {
+    transform: scale(0);
+    opacity: 1;
   }
-  @keyframes fade-in-top {
-    0% {
-      -webkit-transform: translateY(-50px);
-              transform: translateY(-50px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
-    }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
-  @keyframes slide-in-left {
-    0% {
-      -webkit-transform: translateX(-1000px);
-              transform: translateX(-1000px);
-              opacity: 0;
-            }
-            100% {
-              -webkit-transform: translateX(0);
-                      transform: translateX(0);
-              opacity: 1;
-        }
+}
+@keyframes fade-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
   }
-  @keyframes slide-in-back {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-    }
-    100% {
-                -webkit-transform: translateX(1000px);
-                        transform: translateX(1000px);
-                        opacity: 0;
-        }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-back {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+}
