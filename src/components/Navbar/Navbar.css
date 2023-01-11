@@ -11,6 +11,7 @@
     top: 0;
     width: 100%;
     z-index: 10;
+    box-shadow: 0px 0px 20px;
 }
 .container-fluid{
     width: 76%;
@@ -50,6 +51,6 @@
         display: none;
     }
     .container-fluid {
-        width: 100%;
+        width: 90%;
     }
 }
