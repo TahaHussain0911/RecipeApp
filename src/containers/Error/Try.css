@@ -16,3 +16,39 @@
 .error-container p{
     font-size: 30px;
 }
+@media screen and (max-width:700px) {
+    .error-container{
+        width: 80%;
+    }
+    .error-container h1{
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    .error-container p{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width:500px) {
+    .error-container{
+        width: 83%;
+    }
+    .error-container h1{
+        font-size: 35px;
+        margin-bottom: 13px;
+    }
+    .error-container p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:400px) {
+    .error-container{
+        width: 83%;
+    }
+    .error-container h1{
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+    .error-container p{
+        font-size: 16px;
+    }
+}
